@@ -109,7 +109,10 @@ export const SEED_PRODUCTS = [
   // ═══════════════════════════════════════
   // MAÍZ Y SNACKS CRUJIENTES
   // ═══════════════════════════════════════
-  { name: 'MAÍZ CRUJIENTE (CHILE-LIMÓN, CHIPOTLE, CHEDDAR, HABANERO) 280 GR', cost: 62, suggested_price: 100, sale_price: 100, category: 'Snacks', size: 'Bolsa Completa' },
+  { name: 'MAÍZ CRUJIENTE CHILE-LIMÓN 280 GR', cost: 62, suggested_price: 100, sale_price: 100, category: 'Snacks', size: 'Bolsa Completa' },
+  { name: 'MAÍZ CRUJIENTE CHIPOTLE 280 GR', cost: 62, suggested_price: 100, sale_price: 100, category: 'Snacks', size: 'Bolsa Completa' },
+  { name: 'MAÍZ CRUJIENTE CHEDDAR 280 GR', cost: 62, suggested_price: 100, sale_price: 100, category: 'Snacks', size: 'Bolsa Completa' },
+  { name: 'MAÍZ CRUJIENTE HABANERO 280 GR', cost: 62, suggested_price: 100, sale_price: 100, category: 'Snacks', size: 'Bolsa Completa' },
   { name: 'HABAS ENCHILADAS 300 GR', cost: 45, suggested_price: 60, sale_price: 70, category: 'Snacks', size: 'Bolsa Completa' },
   { name: 'GOMITAS ENCHILADAS 130 GR', cost: 35, suggested_price: 45, sale_price: 45, category: 'Snacks', size: 'Bolsa Chica' },
   { name: 'BANANA CHIPS DE ENERGITAS 280 GR', cost: 60, suggested_price: 95, sale_price: 95, category: 'Snacks', size: 'Bolsa Completa' },
