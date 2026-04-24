@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🥜 Cristy Snack's — Sistema de Gestión
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?logo=supabase)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
 
-First, run the development server:
+Sistema web para gestionar el inventario, ventas, pedidos y finanzas de **Cristy Snack's** — negocio de semillas, frutos secos y snacks artesanales en Hermosillo, Sonora.
+
+## 🎯 ¿Por qué se creó?
+
+Cristian Armando maneja su negocio con archivos Excel: inventario, ventas, gastos y pedidos al proveedor. Esto presentaba varios problemas:
+
+- ❌ Incómodo en iPhone/iPad (su herramienta de trabajo diaria)
+- ❌ No hay historial automático de ventas
+- ❌ Los pedidos al proveedor se hacían copiando datos a mano
+- ❌ No hay control de gastos ni cálculo automático de ganancias
+- ❌ Imposible tener datos en tiempo real desde múltiples dispositivos
+
+Este sistema reemplaza todo eso con una **web app responsive** que funciona perfecto en cualquier dispositivo.
+
+## ✨ Funcionalidades
+
+### 📊 Dashboard
+- Resumen de ventas, gastos y ganancias por periodo (hoy/semana/mes)
+- Alertas de stock bajo
+- Productos más vendidos
+- Valor total del inventario
+
+### 🥜 Catálogo de Productos
+- 48 productos pre-cargados del catálogo real
+- CRUD completo (crear, editar, desactivar, eliminar)
+- Filtros por categoría y búsqueda por nombre
+- Tamaños: Bolsa Completa, Media Bolsa, Bolsa Chica, Pieza
+
+### 📦 Inventario
+- Control de stock en tiempo real
+- Botones rápidos de +/- para ajustar cantidades
+- Entrada masiva de mercancía
+- Alertas automáticas de stock bajo
+
+### 💰 Registro de Ventas
+- Flujo rápido: toca productos → ajusta cantidad → registra
+- Actualización automática del inventario al vender
+- Historial con filtros por periodo
+- Cálculo automático de ganancia por venta
+
+### 🛒 Generador de Pedidos
+- Selecciona productos con cantidades usando botones +/-
+- Calcula total en tiempo real
+- **Genera archivo Excel** con el formato exacto del proveedor
+- Incluye envío a domicilio configurable
+
+### 💸 Control de Gastos
+- Categorías personalizables (etiquetas, bolsas, envío, etc.)
+- Registro rápido con fecha y descripción
+- Resumen por categoría y periodo
+
+### ⚙️ Configuración
+- Datos del negocio editables
+- **Reparto de ganancias** configurable (30/70, 50/50, etc.)
+- Categorías de gastos: añadir, editar, eliminar
+- Umbral de alerta de stock bajo personalizable
+
+### 🔐 Autenticación
+- Login seguro con email/contraseña
+- Datos 100% privados por usuario
+- Multi-dispositivo: misma cuenta en iPhone, iPad, laptop
+
+## 🛠️ Stack Tecnológico
+
+| Tecnología | Uso |
+|---|---|
+| [Next.js 16](https://nextjs.org/) | Framework React con SSR |
+| [TypeScript](https://www.typescriptlang.org/) | Tipado estático |
+| [Supabase](https://supabase.com/) | Auth + PostgreSQL Database |
+| [SheetJS (xlsx)](https://sheetjs.com/) | Generación de Excel |
+| [Vercel](https://vercel.com/) | Hosting |
+| Vanilla CSS | Diseño personalizado |
+
+## 🚀 Instalación Local
 
 ```bash
+# 1. Clonar el repositorio
+git clone https://github.com/MarcoSebastianOrtegaMolina/cristy-snacks.git
+cd cristy-snacks
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Configurar variables de entorno
+cp .env.local.example .env.local
+# Editar .env.local con tus credenciales de Supabase
+
+# 4. Crear tablas en Supabase
+# Ir al SQL Editor de Supabase y ejecutar supabase-setup.sql
+
+# 5. Iniciar servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📱 Diseño Mobile-First
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+La app está optimizada para uso táctil en iPhone/iPad:
+- Sidebar colapsable en mobile
+- Botones grandes para selección rápida
+- Controles +/- para cantidades sin teclado
+- Layout responsive que se adapta a cualquier pantalla
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 👨‍💻 Desarrollado por
 
-## Learn More
+**Marco Sebastián Ortega Molina**
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para **Cristian Armando Ortega Molina** — Cristy Snack's
+Hermosillo, Sonora, México 🇲🇽
