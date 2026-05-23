@@ -1,4 +1,4 @@
-# 🥜 Cristy Snack's — Sistema de Gestión
+# Cristy Snack's — Sistema de Gestion
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
 ![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?logo=supabase)
@@ -6,78 +6,78 @@
 
 Sistema web para gestionar el inventario, ventas, pedidos y finanzas de **Cristy Snack's** — negocio de semillas, frutos secos y snacks artesanales en Hermosillo, Sonora.
 
-## 🎯 ¿Por qué se creó?
+## Por que se creo?
 
 Cristian Armando maneja su negocio con archivos Excel: inventario, ventas, gastos y pedidos al proveedor. Esto presentaba varios problemas:
 
-- ❌ Incómodo en iPhone/iPad (su herramienta de trabajo diaria)
-- ❌ No hay historial automático de ventas
-- ❌ Los pedidos al proveedor se hacían copiando datos a mano
-- ❌ No hay control de gastos ni cálculo automático de ganancias
-- ❌ Imposible tener datos en tiempo real desde múltiples dispositivos
+- Incomodo en iPhone/iPad (su herramienta de trabajo diaria)
+- No hay historial automatico de ventas
+- Los pedidos al proveedor se hacian copiando datos a mano
+- No hay control de gastos ni calculo automatico de ganancias
+- Imposible tener datos en tiempo real desde multiples dispositivos
 
 Este sistema reemplaza todo eso con una **web app responsive** que funciona perfecto en cualquier dispositivo.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-### 📊 Dashboard
+### Dashboard
 - Resumen de ventas, gastos y ganancias por periodo (hoy/semana/mes)
 - Alertas de stock bajo
-- Productos más vendidos
+- Productos mas vendidos
 - Valor total del inventario
 
-### 🥜 Catálogo de Productos
-- 48 productos pre-cargados del catálogo real
+### Catalogo de Productos
+- 48 productos pre-cargados del catalogo real
 - CRUD completo (crear, editar, desactivar, eliminar)
-- Filtros por categoría y búsqueda por nombre
-- Tamaños: Bolsa Completa, Media Bolsa, Bolsa Chica, Pieza
+- Filtros por categoria y busqueda por nombre
+- Tamanos: Bolsa Completa, Media Bolsa, Bolsa Chica, Pieza
 
-### 📦 Inventario
+### Inventario
 - Control de stock en tiempo real
-- Botones rápidos de +/- para ajustar cantidades
-- Entrada masiva de mercancía
-- Alertas automáticas de stock bajo
+- Botones rapidos de +/- para ajustar cantidades
+- Entrada masiva de mercancia
+- Alertas automaticas de stock bajo
 
-### 💰 Registro de Ventas
-- Flujo rápido: toca productos → ajusta cantidad → registra
-- Actualización automática del inventario al vender
+### Registro de Ventas
+- Flujo rapido: toca productos, ajusta cantidad, registra
+- Actualizacion automatica del inventario al vender
 - Historial con filtros por periodo
-- Cálculo automático de ganancia por venta
+- Calculo automatico de ganancia por venta
 
-### 🛒 Generador de Pedidos
+### Generador de Pedidos
 - Selecciona productos con cantidades usando botones +/-
 - Calcula total en tiempo real
 - **Genera archivo Excel** con el formato exacto del proveedor
-- Incluye envío a domicilio configurable
+- Incluye envio a domicilio configurable
 
-### 💸 Control de Gastos
-- Categorías personalizables (etiquetas, bolsas, envío, etc.)
-- Registro rápido con fecha y descripción
-- Resumen por categoría y periodo
+### Control de Gastos
+- Categorias personalizables (etiquetas, bolsas, envio, etc.)
+- Registro rapido con fecha y descripcion
+- Resumen por categoria y periodo
 
-### ⚙️ Configuración
+### Configuracion
 - Datos del negocio editables
 - **Reparto de ganancias** configurable (30/70, 50/50, etc.)
-- Categorías de gastos: añadir, editar, eliminar
+- Categorias de gastos: anadir, editar, eliminar
 - Umbral de alerta de stock bajo personalizable
 
-### 🔐 Autenticación
-- Login seguro con email/contraseña
+### Autenticacion
+- Login seguro con email/contrasena
 - Datos 100% privados por usuario
 - Multi-dispositivo: misma cuenta en iPhone, iPad, laptop
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnologico
 
-| Tecnología | Uso |
+| Tecnologia | Uso |
 |---|---|
 | [Next.js 16](https://nextjs.org/) | Framework React con SSR |
-| [TypeScript](https://www.typescriptlang.org/) | Tipado estático |
+| [TypeScript](https://www.typescriptlang.org/) | Tipado estatico |
 | [Supabase](https://supabase.com/) | Auth + PostgreSQL Database |
-| [SheetJS (xlsx)](https://sheetjs.com/) | Generación de Excel |
+| [SheetJS (xlsx)](https://sheetjs.com/) | Generacion de Excel |
 | [Vercel](https://vercel.com/) | Hosting |
-| Vanilla CSS | Diseño personalizado |
+| Vanilla CSS | Diseno personalizado |
 
-## 🚀 Instalación Local
+## Instalacion Local
 
 ```bash
 # 1. Clonar el repositorio
@@ -98,17 +98,17 @@ cp .env.local.example .env.local
 npm run dev
 ```
 
-## 📱 Diseño Mobile-First
+## Diseno Mobile-First
 
-La app está optimizada para uso táctil en iPhone/iPad:
+La app esta optimizada para uso tactil en iPhone/iPad:
 - Sidebar colapsable en mobile
-- Botones grandes para selección rápida
+- Botones grandes para seleccion rapida
 - Controles +/- para cantidades sin teclado
 - Layout responsive que se adapta a cualquier pantalla
 
-## 👨‍💻 Desarrollado por
+## Desarrollado por
 
-**Marco Sebastián Ortega Molina**
+**Marco Sebastian Ortega Molina**
 
 Para **Cristian Armando Ortega Molina** — Cristy Snack's
-Hermosillo, Sonora, México 🇲🇽
+Hermosillo, Sonora, Mexico
